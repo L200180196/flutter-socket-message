@@ -22,7 +22,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     socket = IO.io(
-        'https://af4e-125-164-97-216.ngrok-free.app',
+        'http://localhost:2000',
         IO.OptionBuilder()
             .setTransports(['websocket'])
             .disableAutoConnect()
